@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: rgba(76, 78, 72, 0.616);
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 6px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.divTitle {
+    min-height: 100px;
+    padding-top: 40px;
+    text-align: center;
+}
+.titleGame {
+    color: black;
+}
+.container {
+    border-radius: 12px;
+    padding: 30px;
+    background-color: lightgray;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.459);
+}
+.container p {
+    margin-top: 6px;
+}
+#seleccionar-mascota input{
+    display: none;
+}
+.mascotaMokepon {
+    display: block;
+}
