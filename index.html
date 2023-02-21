@@ -11,60 +11,82 @@
     <script src="./script/script.js"></script>
   </head>
 
-  
   <body>
-    <div>
-      <nav>
-        <ul>
-          <li class="autor">Ike Gomber</li>
-        </ul>
-      </nav>
-    </div>
-
     <div class="main">
-      <div class="divTitle">
-        <h1 class="titleGame">MOKEPON!</h1>
-      </div>
+      <div class="divTitle"></div>
 
       <div class="container">
         <section id="seleccionar-mascota">
-          <h2>Elige a tu mascota:</h2>
+          <h1 class="titulo">MOKEPON!</h1>
 
-          <label class="mascotaMokepon" for="hipodoge">Hipodoge</label>
-          <input type="radio" name="mascota" id="hipodoge" />
+          <h2 class="subtitulo">Elige a tu mascota:</h2>
 
-          <label class="mascotaMokepon" for="capipepo">Capipepo</label>
-          <input type="radio" name="mascota" id="capipepo" />
+          <div class="tarjetas">
+            <div class="tarjetaMascota">
+              <label class="tarjeta-mokepon" for="hipodoge">
+                <p>hipodoge</p>
+                <img
+                  src="./img/mokepons_mokepon_hipodoge_attack.webp"
+                  alt="hipodoge"
+                />
+              </label>
+              <input type="radio" name="mascota" id="hipodoge" />
+            </div>
 
-          <label class="mascotaMokepon" for="ratigueya">Ratigueya</label>
-          <input type="radio" name="mascota" id="ratigueya" />
+            <div class="tarjetaMascota">
+              <label class="tarjeta-mokepon" for="capipepo">
+                <p>Capipepo</p>
+                <img
+                  src="./img/mokepons_mokepon_capipepo_attack.webp"
+                  alt="capipepo"
+                />
+              </label>
+              <input type="radio" name="mascota" id="capipepo" />
+            </div>
+
+            <div class="tarjetaMascota">
+              <label class="tarjeta-mokepon" for="ratigueya">
+                <p>Ratigueya</p>
+                <img
+                  src="./img/mokepons_mokepon_ratigueya_attack.webp"
+                  alt="ratigueya"
+              /></label>
+              <input type="radio" name="mascota" id="ratigueya" />
+            </div>
+          </div>
 
           <button id="boton-mascota">Seleccionar</button>
         </section>
 
         <section id="seleccionar-ataque">
-          <h3>Ha llegado la hora de pelear por tu existencia</h3>
+          <h1 class="titulo">MOKEPON!</h1>
 
-          <p>
-            <button id="boton-fuego">Fuego 🔥</button>
-            <button id="boton-agua">Agua 💧</button>
-            <button id="boton-tierra">Tierra 🌱</button>
-          </p>
-          <hr>
-          <p>
-            Tu mascota <span id="mascota-jugador"></span> tiene
-            <span id="vidas-jugador">3</span> vidas
-          </p>
-          <p>
-            La mascota del enemigo, <span id="mascota-enemigo"></span>, tiene
-            <span id="vidas-enemigo">3</span> vidas
-          </p>
-        </section>
+          <h2 class="subtitulo">Elige tu ataque:</h2>
 
-        <section id="mensajes"></section>
+          <div>
+            <button id="boton-fuego" class="btn-ataque">Fuego</button>
+            <button id="boton-agua" class="btn-ataque">Agua</button>
+            <button id="boton-tierra" class="btn-ataque">Tierra</button>
+          </div>
 
-        <section id="reiniciar">
-          <button id="boton-reiniciar">Reiniciar</button>
+          <div>
+            <section id="mensajes"></section>
+
+            <section id="reiniciar">
+              <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+          </div>
+
+          <div>
+            <p>
+              Tu mascota <span id="mascota-jugador"></span> tiene
+              <span id="vidas-jugador">3</span> vidas
+            </p>
+            <p>
+              La mascota del enemigo, <span id="mascota-enemigo"></span>, tiene
+              <span id="vidas-enemigo">3</span> vidas
+            </p>
+          </div>
         </section>
       </div>
     </div>
