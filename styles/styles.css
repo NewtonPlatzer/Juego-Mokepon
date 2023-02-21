@@ -1,56 +1,86 @@
-* {
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap");
+
+body {
+  font-family: "Fredoka One", cursive;
+  font-family: "Poppins", sans-serif;
+  background-color: #041562;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-nav {
-    background-color: rgba(76, 78, 72, 0.616);
-    padding: 0;
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  margin-top: 20px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+#boton-mascota:hover {
+  cursor: pointer;
 }
 
-ul {
-    padding: 0;
-    padding-left: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+.titulo {
+  font-family: "Fredoka One", cursive;
+  color: white;
+  font-size: 32px;
 }
 
-li {
-    background-color: rgba(0, 0, 0, 0.719);
-    padding: 6px;
-    color: white;
-    display: inline-block;
-    border-radius: 4px;
+.subtitulo {
+  color: white;
+  font-size: 20px;
 }
 
-.divTitle {
-    min-height: 100px;
-    padding-top: 40px;
-    text-align: center;
+.tarjetas {
+  display: flex;
+  gap: 10px;
 }
-.titleGame {
-    color: black;
+.tarjetaMascota:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 20px;
 }
-.container {
-    border-radius: 12px;
-    padding: 30px;
-    background-color: lightgray;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.459);
+.tarjeta-mokepon {
+  width: 180px;
+  height: 100px;
+  background: #11468f;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
-.container p {
-    margin-top: 6px;
+
+.tarjeta-mokepon img {
+  width: 80px;
 }
-#seleccionar-mascota input{
-    display: none;
+
+input {
+  display: none;
 }
-#seleccionar-mascota label {
-    margin: 6px;
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.mascotaMokepon {
-    display: block;
+
+.btn-ataque {
+  background-color: #11468f;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 100px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-color: transparent;
 }
