@@ -48,6 +48,9 @@ li {
 #seleccionar-mascota input{
     display: none;
 }
+#seleccionar-mascota label {
+    margin: 6px;
+}
 .mascotaMokepon {
     display: block;
 }

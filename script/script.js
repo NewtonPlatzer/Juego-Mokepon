@@ -35,7 +35,7 @@ function seleccionarMascotaJugador() {
   sectionSeleccionarMascota.style.display = "none";
 
   let sectionSeleccionarAtaque = document.getElementById("seleccionar-ataque");
-  sectionSeleccionarAtaque.style.display = "block";
+  sectionSeleccionarAtaque.style.display = "flex";
 
   let inputHipodoge = document.getElementById("hipodoge");
   let inputCapipepo = document.getElementById("capipepo");
@@ -143,18 +143,16 @@ function crearMensaje(resultado) {
 function crearMensajeFinal(resultadoFinal) {
   let sectionMensajes = document.getElementById("mensajes");
   let parrafo = document.createElement("p");
-  let hr = document.createElement("hr")
-  let hr2 = document.createElement("hr")
+  let hr = document.createElement("hr");
+  let hr2 = document.createElement("hr");
 
-  
-
-  if (resultadoFinal == '¡¡¡ Ganaste,!!! Muy bien hecho') {
-    parrafo.style.color = 'green'
+  if (resultadoFinal == "¡¡¡ Ganaste,!!! Muy bien hecho") {
+    parrafo.style.color = "green";
   } else {
-    parrafo.style.color = 'red'
+    parrafo.style.color = "red";
   }
 
-  parrafo.style.marginBottom = '8px'
+  parrafo.style.marginBottom = "8px";
 
   parrafo.innerHTML = resultadoFinal;
   sectionMensajes.appendChild(hr);
